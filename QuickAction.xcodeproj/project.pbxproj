@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970298FA242C762200F1F8E3 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 970298F9242C762200F1F8E3 /* cart.png */; };
+		970298FC242C800B00F1F8E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970298FB242C800B00F1F8E3 /* Constants.swift */; };
 		97D457F2242C72A700CB466A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D457F1242C72A700CB466A /* AppDelegate.swift */; };
-		97D457F4242C72A700CB466A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D457F3242C72A700CB466A /* ViewController.swift */; };
+		97D457F4242C72A700CB466A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D457F3242C72A700CB466A /* HomeViewController.swift */; };
 		97D457F7242C72A700CB466A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D457F5242C72A700CB466A /* Main.storyboard */; };
 		97D457F9242C72AD00CB466A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D457F8242C72AD00CB466A /* Assets.xcassets */; };
 		97D457FC242C72AD00CB466A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D457FA242C72AD00CB466A /* LaunchScreen.storyboard */; };
+		97D45804242C72ED00CB466A /* QuickActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D45803242C72ED00CB466A /* QuickActionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970298F9242C762200F1F8E3 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		970298FB242C800B00F1F8E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		97D457EE242C72A700CB466A /* QuickAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D457F1242C72A700CB466A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97D457F3242C72A700CB466A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97D457F3242C72A700CB466A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		97D457F6242C72A700CB466A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97D457F8242C72AD00CB466A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97D457FB242C72AD00CB466A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D457FD242C72AD00CB466A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D45803242C72ED00CB466A /* QuickActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickActionHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970298FD242D02CA00F1F8E3 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				97D45803242C72ED00CB466A /* QuickActionHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		970298FE242D02D500F1F8E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97D457F3242C72A700CB466A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		970298FF242D02E100F1F8E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				970298FB242C800B00F1F8E3 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		97029900242D02E800F1F8E3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				970298F9242C762200F1F8E3 /* cart.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		97029901242D02EF00F1F8E3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				97D457F1242C72A700CB466A /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		97029902242D030400F1F8E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97D457F5242C72A700CB466A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		97D457E5242C72A700CB466A = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +108,12 @@
 		97D457F0242C72A700CB466A /* QuickAction */ = {
 			isa = PBXGroup;
 			children = (
-				97D457F1242C72A700CB466A /* AppDelegate.swift */,
-				97D457F3242C72A700CB466A /* ViewController.swift */,
-				97D457F5242C72A700CB466A /* Main.storyboard */,
+				97029900242D02E800F1F8E3 /* Images */,
+				97029901242D02EF00F1F8E3 /* Delegates */,
+				970298FF242D02E100F1F8E3 /* Utils */,
+				970298FE242D02D500F1F8E3 /* Controller */,
+				970298FD242D02CA00F1F8E3 /* Handler */,
+				97029902242D030400F1F8E3 /* View */,
 				97D457F8242C72AD00CB466A /* Assets.xcassets */,
 				97D457FA242C72AD00CB466A /* LaunchScreen.storyboard */,
 				97D457FD242C72AD00CB466A /* Info.plist */,
@@ -123,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D457FC242C72AD00CB466A /* LaunchScreen.storyboard in Resources */,
+				970298FA242C762200F1F8E3 /* cart.png in Resources */,
 				97D457F9242C72AD00CB466A /* Assets.xcassets in Resources */,
 				97D457F7242C72A700CB466A /* Main.storyboard in Resources */,
 			);
@@ -135,8 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D457F4242C72A700CB466A /* ViewController.swift in Sources */,
+				97D457F4242C72A700CB466A /* HomeViewController.swift in Sources */,
+				97D45804242C72ED00CB466A /* QuickActionHandler.swift in Sources */,
 				97D457F2242C72A700CB466A /* AppDelegate.swift in Sources */,
+				970298FC242C800B00F1F8E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
